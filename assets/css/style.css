@@ -1,3 +1,8 @@
+
+html{
+   scroll-behavior: smooth;
+}
+
 *{
    font-family: Helvetica, Arial, sans-serif;
    margin:0;
@@ -35,7 +40,6 @@ header h1{
    padding-right:5px;
    padding-top:10px;
    padding-bottom:10px;
-   border-top-right-radius:15px;
    cursor: pointer;
 }
 
@@ -89,6 +93,7 @@ header li:hover{
    flex-flow: row wrap;
    justify-content: center;
    align-items:center;
+   min-height:70vh;
 }
 
 .my-quote{
@@ -220,12 +225,40 @@ header li:hover{
 
 /* Utility classes */
 
+/* Media Querry for screen less than 980px */
+@media screen and (max-width: 980px){
+
+   header{
+      justify-content: center;
+   }
+
+   header h1{
+      text-align:center;
+      width:100%;
+   }
+   header nav{
+      margin-right: 0;
+   }
+
+}
 
 /* Media Querry for screens less than 768px (Tablets) */
-/* @media screen and (max-width:768px){
+@media screen and (max-width:768px){
    header{
+      flex-flow: column wrap;
       padding-bottom:10px;
       justify-content:center;
+      align-items: center;
+   }
+
+   header nav{
+      margin-right:0;
+   }
+
+   header nav ul {
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: center;
       align-items: center;
    }
    header h1{
@@ -233,6 +266,90 @@ header li:hover{
       border-radius:0px;
       text-align:center;
       width: 100%;
+      padding-left:0;
    }
 
-} */
+   .about-me img{
+      width:35%;
+   }
+
+   .my-text{
+      width:60%;
+   }
+
+   .contact-info{
+      display:flex;
+      flex-flow:column wrap;
+      gap:10px;
+   }
+
+} 
+
+/* Screen for mobile and smaller size 575px and lower */
+@media screen and (max-width:575px){
+   header{
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+   }
+
+   header nav {
+      margin-right:0;
+      width:100%;
+   }
+
+   .my-quote{
+      max-width:fit-content(20em);
+   }
+
+   .my-quote h2{
+      letter-spacing: 1.5px;
+      font-size:30px;
+   }
+   
+   
+   .about-me{
+      padding:30px;
+   }
+
+   .background-me{
+      padding: 10px;
+   }
+   
+   .about-me img{
+      width:45%;
+   }
+   
+   .my-text{
+      width:55%;
+   }
+
+   .my-text h2{
+      margin:auto;
+   }
+
+   .my-text p{
+      line-height:1.3;
+   }
+
+   .contact-info{
+      display:flex;
+      flex-flow:column wrap;
+      gap:10px;
+   }
+}
+
+@media screen and (max-width: 450px){
+   .background-me{
+      flex-flow:column wrap;
+   }
+   .my-text{
+      width:90%;
+   }
+
+   .about-me img{
+      width:60%;
+   }
+
+} 
