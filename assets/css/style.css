@@ -17,6 +17,9 @@ html{
 
 /* Header styling section */
 header{
+   z-index:999;
+   position:fixed;
+   width:100%;
    background-color:rgb(0,0,0,0.4);
    background-image: url("../images/bg-hero.jpg");
    background-attachment: fixed;
@@ -173,6 +176,89 @@ header li:hover{
 
 /* My Work Section starts */
 
+.my-work{
+   margin-bottom: 25px;
+}
+
+.my-work h2{
+   text-align:center;
+   letter-spacing:1px;
+   font-size:35px;
+   color:rgb(177, 201, 222);
+   margin: 0 auto 15px auto;
+   width:50%;
+   margin-bottom:40px;
+}
+
+.my-work h2 span{
+   color: rgb(209, 52, 78);
+}
+
+.project-group{
+   display:flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 80px;
+}
+.run-buddy .img {
+   background-image: url("../images/projectsImg/run-buddy.PNG");
+}
+
+.pass-gen .img{
+   background-image: url("../images/projectsImg/pass-generator.PNG");
+}
+
+.project{
+   position:relative;
+}
+
+.project .img {
+   width: 500px;
+   height: 150px;
+   cursor: pointer;
+   background-size: cover;
+   background-position:top;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   transition: box-shadow .3s linear;
+}
+
+.project .img:hover{
+   box-shadow: inset 0 0 0 1000px rgba(51, 48, 48, 0.667);  
+}
+
+
+.link a{
+   text-decoration: none;
+   color:white;
+}
+
+.project .link{
+   position:absolute;
+   bottom:0;
+   right:0;
+   background-color: black;
+   text-align:center;
+   visibility: hidden;
+   opacity:0;
+   -webkit-transition: visibility 0s, opacity .5s linear;
+   transition: visibility 0s, opacity .5s linear;
+   
+}
+
+
+
+.project:hover .link{
+   visibility: visible;
+   width:50%;
+   padding: 7px 10px;
+   opacity:0.7;
+   border-top-left-radius:10px;
+
+}
+
+
 
 /* My Work Section ends */
 
@@ -197,7 +283,6 @@ header li:hover{
 
 .contact-me h2 span{
    color:rgb(209, 52, 78);
-   border-bottom:2px solid rgb(209, 52, 78);
 }
 
 .contact-info a{
