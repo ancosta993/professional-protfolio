@@ -215,6 +215,10 @@ header li:hover{
    background-image: url("../images/projectsImg/pass-generator.PNG");
 }
 
+.robot-gladiator{
+   background-image: url("../images/projectsImg/robot-gladiator.PNG")
+}
+
 .project{
    position:relative;
 }
@@ -229,8 +233,12 @@ header li:hover{
    transition: box-shadow .3s linear;
 }
 
+.run-buddy{
+   width:100%;
+}
 .run-buddy .img{
-   width:550px;
+   margin: 0 auto;
+   width: 800;
    height: 300px;
 }
 
@@ -244,6 +252,7 @@ header li:hover{
    color:white;
 }
 
+
 .project .link{
    position:absolute;
    bottom:0;
@@ -254,7 +263,11 @@ header li:hover{
    opacity:0;
    -webkit-transition: visibility 0s, opacity .5s linear;
    transition: visibility 0s, opacity .5s linear;
+}
 
+.run-buddy .link{
+   right: 13%;
+   text-align:start;
 }
 
 .project:hover .link{
