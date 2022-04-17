@@ -50,4 +50,8 @@ Contact me section contains the links to social media and a title, for now. The 
 - use javascript for more interactivity.
 
 ## Finished Project
-[header](./assets/images/finished-project/header.png)
+![header](./assets/images/finished-project/header.PNG)
+![about-me](./assets/images/finished-project/about-me.PNG)
+![my-work](./assets/images/finished-project/my-work.PNG)
+![contact-me](./assets/images/finished-project/contact-me.PNG)
+
