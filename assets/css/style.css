@@ -219,6 +219,11 @@ header li:hover{
    background-image: url("../images/projectsImg/robot-gladiator.PNG")
 }
 
+.stream-searcher{
+   background-image: url("../images/projectsImg/stream-searcher.PNG");
+   background-size: cover;
+}
+
 .project{
    position:relative;
 }
