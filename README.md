@@ -1,4 +1,5 @@
 # Profession Protfolio
+Click [here](https://ancosta993.github.io/professional-protfolio/) for the project.
 
 ## Introduction
 A protfolio in progression for myself (Anthony Dcosta). It gathers all the projects in one place and showcases them thorugh CSS styling. Besides that, it also provides information about myself. Only HTML and CSS are being used in this project at the moment. Javascript will be used later on for new features.
@@ -47,4 +48,10 @@ Contact me section contains the links to social media and a title, for now. The 
 - Add media queries for smaller screen.
 - image for about me section will be replaced with my actual image.
 - use javascript for more interactivity.
+
+## Finished Project
+![header](./assets/images/finished-project/header.PNG)
+![about-me](./assets/images/finished-project/about-me.PNG)
+![my-work](./assets/images/finished-project/my-work.PNG)
+![contact-me](./assets/images/finished-project/contact-me.PNG)
 
