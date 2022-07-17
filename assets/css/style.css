@@ -224,6 +224,11 @@ header li:hover{
    background-size: cover;
 }
 
+.baseball-organizer{
+   background-image: url("../images/projectsImg/baseball-organizer.PNG");
+   background-size: cover;
+}
+
 .project{
    position:relative;
 }
